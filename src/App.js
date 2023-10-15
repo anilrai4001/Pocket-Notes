@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import DesktopMode from './Modes/DesktopMode';
+import MobileMode from './Modes/MobileMode';
+import './App.css'
+
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+ 
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {screenWidth > 425 ? <DesktopMode /> : <MobileMode />}
     </div>
-  );
+  )
+  
+
 }
 
 export default App;

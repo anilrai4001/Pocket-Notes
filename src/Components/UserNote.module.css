@@ -1,0 +1,18 @@
+.UserNote{
+    /* background-color: red; */
+    min-height: fit-content;
+    margin-bottom: 20px;
+    display: flex;
+    gap:20px
+}
+.timeStamp{
+    width:15%;
+    /* background-color: antiquewhite; */
+    font-size: 15px;
+    padding: 5px;
+}
+.content{
+    width:85%;
+    /* background-color: aqua; */
+    padding: 5px;
+}

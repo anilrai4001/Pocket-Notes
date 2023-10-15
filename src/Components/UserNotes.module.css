@@ -1,0 +1,12 @@
+.UserNotes{
+    height:60%;
+    width:100%;
+    /* background-color: lightblue; */
+    /* color: black; */
+    padding: 0 30px;
+    overflow-y: scroll;
+    margin:20px 0;
+}
+.UserNotes::-webkit-scrollbar{
+    width: 0;
+}
