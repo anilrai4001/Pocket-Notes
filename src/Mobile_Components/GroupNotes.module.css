@@ -1,0 +1,12 @@
+.GroupNotes{
+    /* background-color:lightblue; */
+    height:70%;
+    padding:30px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    overflow-y:scroll;
+}
+.GroupNotes::-webkit-scrollbar{
+    width:0;
+}

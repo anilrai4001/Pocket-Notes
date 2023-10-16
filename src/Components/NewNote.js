@@ -7,10 +7,10 @@ function NewNote({ setCreate }) {
 
   const handleCreate = () => {
     if(groupName && groupColor){
-      setCreate(false);
       let notesGroups = JSON.parse(localStorage.getItem('NotesGroups')) || [];
       notesGroups.push({groupName,groupColor});
       localStorage.setItem('NotesGroups',JSON.stringify(notesGroups));
+      setCreate(false);
     }
   }
 

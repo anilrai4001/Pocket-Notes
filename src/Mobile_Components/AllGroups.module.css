@@ -1,0 +1,40 @@
+.AllNotes{
+    width:100vw;
+    height: 100vh;
+    /* background-color: lightblue; */
+    padding: 15px 10px;
+    padding-right: 0;
+    
+    overflow: hidden;
+}
+.heading{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 500;
+    /* background-color: aqua; */
+}
+.createNotes{
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 5px 20px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.userNotes{
+    /* background-color: blue; */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    height: 70%;
+    overflow-y: scroll;
+}
+.userNotes::-webkit-scrollbar{
+    width:0px;
+}

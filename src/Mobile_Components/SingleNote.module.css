@@ -1,0 +1,29 @@
+.SingleNote{
+    display: flex;
+    gap:15px;
+    /* background-color: aqua; */
+    height: fit-content;
+}
+.timeStamp{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    gap:5px;
+
+    font-family: Roboto;
+    font-size: 13px;
+  
+    
+    
+    /* background-color: blue;   */
+    
+}
+.content{
+    width:70%;
+    font-family: Roboto;
+    font-size: 13px;
+    
+    
+    
+    /* background-color: red;    */
+}

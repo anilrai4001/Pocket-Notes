@@ -18,11 +18,11 @@ function App() {
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, []);
+  }, [screenWidth]);
 
   return (
     <div className='App'>
-      {screenWidth > 425 ? <DesktopMode /> : <MobileMode />}
+      {screenWidth > 625 ? <DesktopMode /> : <MobileMode />}
     </div>
   )
   

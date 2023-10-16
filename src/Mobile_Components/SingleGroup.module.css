@@ -1,4 +1,4 @@
-.SingleNote{
+.SingleGroup{
     width: 100%;
     /* height: 50px; */
     
@@ -13,8 +13,9 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     cursor: pointer;
+    /* background-color: antiquewhite; */
 }
 
 .noteLogo{
@@ -25,12 +26,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     
 }
 .noteLogoText{
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 500;
     color: white;
     display: flex;
