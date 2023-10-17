@@ -14,11 +14,11 @@ function InputNotes({selectedNote}) {
 
   const handleNotes = (e)=>{
     let newText = e.target.value;
-    setText(newText.trim());
+    setText(newText);
   }
   
   const handleSaveNotes = ()=>{
-    if(text!==''){
+    if(text.trim()!==''){
       let nextNote = {time:new Date(),notes:text}
       let notesArray = JSON.parse(localStorage.getItem(selectedNote.groupName)) || [];
       notesArray.push(nextNote);
